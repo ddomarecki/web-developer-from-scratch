@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        * {
+            border: 0;
+            margin: 0;
+            box-sizing: content-box;
+        }
+
+        .wrapper {
+            max-width: 1024px;
+            height: 50vh;
+            margin: 0 auto;
+            background-color: #bbb;
+            position: relative;
+            overflow: hidden;
+
+        }
+
+        .button {
+            position: absolute;
+            background-color: black;
+            transition: 0.4s;
+            padding: 20px 30px;
+            text-align: center;
+            text-transform: uppercase;
+            color: white;
+            font-family: verdana, sans-serif;
+            left: 40%;
+            bottom: 40%;
+            border: 1px solid black;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            color: black;
+            background-color: white;
+            border: 1px solid white;
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="button">Wciśnij mnie!</div>
+    </div>
+</body>
+
+</html>

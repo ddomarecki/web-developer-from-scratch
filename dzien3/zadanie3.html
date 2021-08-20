@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    /*inne rozwiązanie to:
+        div div p */
+        
+       div > p + div {
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Tekst 1</p>
+        <div>
+            <p>Tekst 2</p>
+        </div>
+    </div>
+    <div>
+        <p>Tekst 3</p>
+    </div>
+</body>
+</html>

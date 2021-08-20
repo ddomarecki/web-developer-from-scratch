@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+}
+
+p {
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin: auto;
+    line-height: 100vh;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 5vh;
+    letter-spacing: 3px;
+
+}

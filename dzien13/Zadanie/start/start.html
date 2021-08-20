@@ -1,0 +1,106 @@
+<!--
+Pobierz projekt
+
+Dodaj niezbędny meta znacznik - sprawdź jak będzie wyglądał podgląd strony na urządzeniu mobilnym z meta znacznikiem viewport i bez niego. (meta-vp[tab])
+
+Zbuduję style od najmniejszego do największego widoku. Na każdymy widoku ma się wyświetlać tylko prawidłowy div, określający szerokosć danego elementu.
+Ps. zwiększ font-size p na 40px;
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div {
+            display: none;
+        }
+
+        @media (max-width: 359px) {
+            div.item1 {
+                display: block;
+            }
+
+            body {
+                background-color: red;
+            }
+
+        }
+
+        @media (min-width: 360px) {
+            div.item2 {
+                display: block;
+            }
+
+            div.item1 {
+                display: none;
+            }
+
+            body {
+                background-color: green;
+            }
+        }
+
+        @media (min-width: 640px) {
+            div.item3 {
+                display: block;
+            }
+
+            div.item2 {
+                display: none;
+            }
+
+            body {
+                background-color: blue;
+            }
+
+        }
+
+        @media (min-width: 1024px) {
+            body {
+                background-color: grey;
+
+            }
+
+            div.item3 {
+                display: none;
+            }
+
+            div.item4 {
+                display: block;
+            }
+        }
+
+        @media (min-width: 1400px) {
+            body {
+                background-color: orangered;
+                border: 10px solid blue;
+
+            }
+
+            div.item4 {
+                display: none;
+            }
+
+            div.item5 {
+                display: block;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="item1">Ekran ma do 359px i kolor tła czerwony</div>
+    <div class="item2">Ekran ma między 360px a 639px i kolor tła zielony</div>
+    <div class="item3">Ekran ma od 640px do 1023px i kolor tła niebieski</div>
+    <div class="item4">Ekran ma od 1024px do 1400px i kolor tła szary</div>
+    <div class="item5">Ekran ma co najmnie 1400px i border niebieski 10pxna body</div>
+
+</body>
+
+</html>
